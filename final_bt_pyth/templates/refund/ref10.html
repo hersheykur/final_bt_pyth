@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<div class="wrapper">
+  <div class="checkout container">
+
+    <header>
+      <h1>Hi, <br>Refunding a transaction</h1>
+      <p>
+        Make a test $10.00 refund payment with Braintree 
+      </p>
+    </header>
+
+    <form id="payment-form" method="post" action="/refund">
+      <button class="button" type="submit" id="submit-button"><span>Refunding</span></button>
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}
